@@ -1,11 +1,8 @@
 # springBootMicroServices
 
-1. Deploy on PCF
 
-Name server 
-https://nameserver.cfapps.io/
-
-2. Load Bill rates
+Deploy on PCF
+1.Load Bill rates
 
 https://billing-service.cfapps.io/billingService
 POST 
@@ -18,7 +15,7 @@ POST
 Fetch Bill Rates
 GET : https://billing-service.cfapps.io/billingService/GOLD
 
-3. Blogger
+2. Blogger
 
 POST https://blogger-service.cfapps.io/bloggers
 {
@@ -29,3 +26,5 @@ POST https://blogger-service.cfapps.io/bloggers
 GET https://blogger-service.cfapps.io/bloggers/1
 
 GET Billing https://blogger-service.cfapps.io/bloggers/1/billing
+
+We can also use service registry from PCF and there will not be need to create a separte APP for Eureka Naming server
